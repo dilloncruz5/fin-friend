@@ -1,6 +1,6 @@
 <div align="center">
 <br />
-<h1>Fin-Friend 💸</h1>
+<h1>Fin-Friend </h1>
 <strong>Your personal guide to financial freedom.</strong>
 <br />
 <br />
@@ -9,22 +9,8 @@
 
 <br>
 
-📋 Table of Contents
-About The Project
 
-Key Features
-
-Preview
-
-Tech Stack
-
-Getting Started
-
-Contributing
-
-License
-
-About The Project
+# About The Project
 Fin-Friend is a comprehensive web application designed to be your personal guide to financial freedom. It provides users with a suite of tools to manage their finances, make informed decisions, and enhance their financial literacy. The application features multi-language support to ensure accessibility for a diverse user base.
 
 ✨ Key Features
