@@ -13,6 +13,8 @@
 # About The Project
 Fin-Friend is a comprehensive web application designed to be your personal guide to financial freedom. It provides users with a suite of tools to manage their finances, make informed decisions, and enhance their financial literacy. The application features multi-language support to ensure accessibility for a diverse user base.
 
+Note: This project is done in 2024
+
 ✨ Key Features
 📊 Comprehensive Dashboard: Get a clear, visual overview of your financial health in one place.
 
