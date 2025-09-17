@@ -1,0 +1,9 @@
+{
+  "appId": "com.example.finfriend",
+  "appName": "FinFriend",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "server": {
+    "allowNavigation": ["*"]
+  }
+}

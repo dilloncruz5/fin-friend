@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinFriend</title>
+  <link rel="stylesheet" href="src/styles.css" />
+  <style>
+    .card {
+      padding: 20px;
+      cursor: pointer;
+      touch-action: manipulation; /* Ensures touch gestures are handled properly */
+    }
+  </style>
+</head>
+<body>
+  <div class="index">
+    <header>
+      <h1><span data-i18n="welcome">Welcome to</span> <span class="highlight">FinAssist</span></h1>
+      <p data-i18n="tagline">Your personal guide to financial freedom</p>
+    </header>
+
+    <div class="theme-toggle-container">
+      <label for="theme-toggle" class="visually-hidden">Toggle Theme</label>
+      <input type="checkbox" id="theme-toggle" class="theme-toggle" title="Toggle Theme" />
+      <label for="theme-toggle" class="theme-toggle-label">
+        <span class="theme-toggle-circle"></span>
+      </label>
+    </div>
+
+    <div class="language-selector">
+      <label data-i18n="select-language">Select Language:</label>
+      <button onclick="changeLanguage('en')">English</button>
+      <button onclick="changeLanguage('hi')">हिंदी</button>
+      <button onclick="changeLanguage('ta')">தமிழ்</button>
+    </div>
+
+    <main class="grid">
+      <div onclick="navigate('pages/ai-assistant.html')" class="card">
+        <h3>AI Financial Assistant</h3>
+      </div>
+      <div onclick="navigate('pages/budget-tracker.html')" class="card">
+        <h3>Budget Tracker</h3>
+      </div>
+      <div onclick="navigate('pages/investment-guide.html')" class="card">
+        <h3>Investment Guide</h3>
+      </div>
+      <div onclick="navigate('pages/loan-eligibility.html')" class="card">
+        <h3>Loan Eligibility</h3>
+      </div>
+    </main>
+
+    <footer class="card">
+      <h3 data-i18n="financial-education">Financial Education</h3>
+      <p data-i18n="coming-soon">Learn more about personal finance and grow your financial knowledge. (Coming Soon)</p>
+    </footer>
+  </div>
+
+  <script src="src/script.js"></script>
+</body>
+</html>

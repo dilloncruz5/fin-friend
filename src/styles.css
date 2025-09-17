@@ -1,0 +1,356 @@
+/* Default Light Theme */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --card-background: #f3f4f6;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --card-background: #1e1e1e;
+}
+
+body {
+  background-color: #ffffff; /* Default background color */
+  color: #000000; /* Default text color */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card {
+  background-color: #f3f4f6; /* Default card background */
+  padding: 20px;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: background-color 0.3s ease;
+}
+
+/* Fancy Theme Toggle Button */
+.theme-toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.theme-toggle {
+  display: none;
+}
+
+.theme-toggle-label {
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle-label:hover {
+  background-color: #bbb;
+}
+
+.theme-toggle:checked + .theme-toggle-label {
+  background-color: #4caf50;
+}
+
+.theme-toggle-circle {
+  width: 26px;
+  height: 26px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:checked + .theme-toggle-label .theme-toggle-circle {
+  transform: translateX(30px);
+}
+
+/* === Index Page Styles Start === */
+.index {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background: #f8f8f8;
+  color: #333;
+}
+
+.index header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.index .highlight {
+  color: #00cfff;
+}
+
+.index .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.index .card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.index .card:hover {
+  transform: translateY(-5px);
+}
+
+.index .language-selector {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.index .language-selector button {
+  margin: 0 0.3rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #00cfff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.index .language-selector button:hover {
+  background-color: #009ecf;
+}
+
+/* === Index Page Styles End === */
+
+/* === Budget Tracker Styles Start === */
+.budget-tracker {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f4f6;
+  padding: 2rem;
+}
+
+.budget-tracker .glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+.budget-tracker .text-green {
+  color: #16a34a;
+}
+
+.budget-tracker .text-red {
+  color: #dc2626;
+}
+
+.budget-tracker .bg-green {
+  background-color: #dcfce7;
+}
+
+.budget-tracker .bg-red {
+  background-color: #fee2e2;
+}
+
+.budget-tracker input,
+.budget-tracker button,
+.budget-tracker select {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.budget-tracker button {
+  cursor: pointer;
+}
+
+.budget-tracker .transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: white;
+  margin-bottom: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.budget-tracker .transaction .left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.budget-tracker .transaction .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.budget-tracker .scrollable {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.budget-tracker .section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.budget-tracker .summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+.budget-tracker .summary-grid p {
+  margin: 0.25rem 0;
+}
+/* === Budget Tracker Styles End === */
+
+/* === Investment Suggestion Styles Start === */
+.investment-guide {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f4f6;
+  padding: 2rem;
+}
+
+.investment-guide .glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+.investment-guide .text-green {
+  color: #16a34a;
+}
+
+.investment-guide .text-yellow {
+  color: #eab308;
+}
+
+.investment-guide .text-red {
+  color: #dc2626;
+}
+
+.investment-guide .bg-green {
+  background-color: #dcfce7;
+}
+
+.investment-guide .bg-yellow {
+  background-color: #fef08a;
+}
+
+.investment-guide .bg-red {
+  background-color: #fee2e2;
+}
+
+.investment-guide input,
+.investment-guide button,
+.investment-guide select {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.investment-guide button {
+  cursor: pointer;
+}
+
+.investment-guide .option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: white;
+  margin-bottom: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.investment-guide .option .left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.investment-guide .option .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.investment-guide .scrollable {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.investment-guide .section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.investment-guide .summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+.investment-guide .summary-grid p {
+  margin: 0.25rem 0;
+}
+
+.investment-guide .option-expanded {
+  background-color: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+  padding: 1rem;
+}
+
+.investment-guide .option-expanded p {
+  color: #4b5563;
+}
+
+.investment-guide .chevron-icon {
+  font-size: 1rem;
+  transition: transform 0.3s;
+}
+
+.investment-guide .option-header .chevron-icon {
+  transform: rotate(0deg);
+}
+
+.investment-guide .option-expanded + .option-header .chevron-icon {
+  transform: rotate(180deg);
+}
+/* === Investment Suggestion Styles End === */
+
+

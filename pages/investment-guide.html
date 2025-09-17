@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investment Suggestion</title>
+  <link rel="stylesheet" href="../src/styles.css"> <!-- External stylesheet link -->
+</head>
+<body>
+  <div class="investment-guide space-y-6">
+    <!-- Investment Form Section -->
+    <div class="glass-card">
+      <h3 class="text-lg font-medium text-finance-soft-black">Find Investment Options</h3>
+      <div class="space-y-4">
+        <!-- Savings Amount -->
+        <div>
+          <label class="block text-sm text-finance-dark-gray mb-1">How much can you invest?</label>
+          <div class="relative">
+            <div class="absolute left-3 top-1/2 transform -translate-y-1/2 text-finance-medium-gray">₹</div>
+            <input id="savingsAmount" type="number" placeholder="Enter amount" class="w-full py-3 pl-8 pr-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-1 focus:ring-finance-blue">
+          </div>
+        </div>
+
+        <!-- Investment Duration -->
+        <div>
+          <label class="block text-sm text-finance-dark-gray mb-1">Investment duration</label>
+          <select id="duration" class="w-full py-3 px-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-1 focus:ring-finance-blue bg-white">
+            <option value="1">1 year</option>
+            <option value="3">3 years</option>
+            <option value="5">5 years</option>
+            <option value="10">10 years</option>
+          </select>
+        </div>
+
+        <!-- Find Options Button -->
+        <button id="findOptionsButton" class="w-full py-3 rounded-xl font-medium transition-all flex items-center justify-center space-x-2 bg-gray-100 text-gray-400" disabled>
+          <span>Find Options</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Investment Options Section -->
+    <div id="optionsContainer" class="hidden space-y-4">
+      <h3 class="text-lg font-medium text-finance-soft-black px-1">Recommended Investment Options</h3>
+      <div id="investmentOptions" class="space-y-3">
+        <!-- Dynamically populated investment options go here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="../src/script.js"></script>
+</body>
+</html>

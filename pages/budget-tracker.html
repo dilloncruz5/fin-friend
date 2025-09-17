@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="../src/styles.css" />
+</head>
+<body>
+    <div class="budget-tracker">
+      <!-- Summary Card -->
+      <div class="glass-card">
+        <div class="text-center">
+          <h3>Income: <span class="text-green" id="income">₹0</span></h3>
+          <h3>Expenses: <span class="text-red" id="expense">₹0</span></h3>
+          <h3>Balance: <span id="balance">₹0</span></h3>
+        </div>
+      </div>
+  
+      <!-- Add Transaction -->
+      <div class="glass-card">
+        <h3>Add Transaction</h3>
+        <select id="type">
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+  
+        <input type="number" id="amount" placeholder="Amount" />
+        <input type="text" id="description" placeholder="Description" />
+        <button id="add-btn">Add Transaction</button>
+      </div>
+  
+      <!-- Recent Transactions -->
+      <div class="glass-card">
+        <h3>Recent Transactions</h3>
+        <div id="transactions" class="scrollable"></div>
+      </div>
+    </div>
+  
+    <script src="../src/script.js"></script>
+  </body>
+  
+</html>
