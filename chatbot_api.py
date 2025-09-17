@@ -4,7 +4,7 @@ from fastapi import FastAPI, Request # type: ignore
 from fastapi.middleware.cors import CORSMiddleware
 import requests
 
-API_KEY = "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"  # Replace with your actual key
+API_KEY = "xxxxxxx"  # Replace with your actual key
 
 app = FastAPI()
 
@@ -39,3 +39,4 @@ async def chat(request: Request):
         return {"response": reply}
     else:
         return {"response": f"Error {response.status_code}: {response.text}"}
+
