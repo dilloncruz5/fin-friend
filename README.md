@@ -6,20 +6,6 @@
 <br />
 </div>
 
-<div align="center">
-  <a href="LICENSE.md">
-    <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License" />
-  </a>
-  <a href="https://react.dev/">
-    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-  </a>
-  <a href="https://nodejs.org/">
-    <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  </a>
-  <a href="https://vercel.com">
-    <img src="https://img.shields.io/badge/deployed%20on-Vercel-black?style=for-the-badge&logo=vercel" alt="Vercel" />
-  </a>
-</div>
 
 <br>
 
